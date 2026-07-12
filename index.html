@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NextGenVotes is a nonpartisan organization helping first time voters learn how to vote and empowering students across New Jersey to start civic engagement chapters at their schools." />
+  <meta name="theme-color" content="#0B1D3A" />
+  <meta property="og:title" content="NextGenVotes: Empowering the Next Generation of Voters" />
+  <meta property="og:description" content="Nonpartisan voter education for first time voters. Start a chapter at your NJ school." />
+  <meta property="og:image" content="logo.png" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>NextGenVotes: Empowering the Next Generation of Voters</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header id="site-header" class="header">
+    <div class="header__inner container">
+      <button
+        type="button"
+        id="menu-btn"
+        class="header__menu-btn"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        aria-label="Open menu"
+      >
+        <span id="menu-icon" class="header__menu-icon" data-open="false"></span>
+      </button>
+
+      <nav id="main-nav" class="header__nav" aria-label="Main">
+        <ul class="header__nav-list">
+          <li><a href="#about" class="header__nav-link">About</a></li>
+          <li><a href="#voting-101" class="header__nav-link">Voting 101</a></li>
+          <li><a href="#programs" class="header__nav-link">Programs</a></li>
+          <li><a href="#get-involved" class="header__nav-link">Get Involved</a></li>
+          <li><a href="#resources" class="header__nav-link">Resources</a></li>
+          <li><a href="#donate" class="header__nav-link">Donate</a></li>
+          <li><a href="#contact" class="header__nav-link">Contact</a></li>
+        </ul>
+        <a
+          href="https://forms.gle/HanEQyA81GQghY7a8"
+          class="btn btn--primary header__cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Apply Now</a>
+      </nav>
+
+      <a href="#" class="header__brand" aria-label="NextGenVotes home">
+        <span class="header__wordmark">
+          <span class="text-navy">NextGen</span><span class="text-red">Votes</span>
+        </span>
+        <img src="logo.png" alt="NextGenVotes logo" class="header__logo" width="48" height="48" />
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__circle hero__circle--1"></div>
+        <div class="hero__circle hero__circle--2"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__badge">
+            <img src="logo.png" alt="" class="hero__badge-img" width="320" height="320" />
+            <div class="hero__badge-ring"></div>
+          </div>
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span>Nonpartisan</span>
+            <span>New Jersey</span>
+            <span>Youth Led</span>
+          </p>
+          <h1 id="hero-heading" class="hero__title">
+            Your vote.<br />
+            <span class="text-red">Your voice.</span><br />
+            <span class="text-navy">Your future.</span>
+          </h1>
+          <p class="hero__subtitle">
+            NextGenVotes helps first time voters learn how to vote and empowers
+            students across New Jersey to start school chapters that bring civic
+            engagement to their peers and communities.
+          </p>
+          <div class="hero__actions">
+            <a href="https://forms.gle/1tVVc36k4EECytB76" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Register to Vote</a>
+            <a href="#get-involved" class="btn btn--secondary btn--lg">Start a Chapter</a>
+          </div>
+          <p class="hero__note">
+            It takes less than 2 minutes to register. You'll need your SSN or Driver's License.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Our Mission</p>
+          <h2 id="about-heading" class="section-title">
+            Empowering the <span class="text-red">next generation</span> of voters
+          </h2>
+          <p class="section-lead">
+            NextGenVotes is a nonpartisan youth civic engagement organization dedicated to
+            helping young people become informed and active members of their communities.
+            We believe every student should have the knowledge and confidence to understand
+            how government works, how elections affect their lives, and how they can make a
+            difference. By expanding student led chapters across New Jersey, we are working
+            to make practical, nonpartisan civic education accessible to more students while
+            empowering them to educate others, strengthen their communities, and inspire
+            lifelong civic participation.
+          </p>
+        </div>
+
+        <div class="about__stats" role="list">
+          <div class="about__stat" role="listitem">
+            <p class="about__stat-value">200+</p>
+            <p class="about__stat-label">Students Registered</p>
+          </div>
+          <div class="about__stat" role="listitem">
+            <p class="about__stat-value">500+</p>
+            <p class="about__stat-label">Students learned how to be civically engaged</p>
+          </div>
+          <div class="about__stat" role="listitem">
+            <p class="about__stat-value">40+</p>
+            <p class="about__stat-label">Classrooms Visited</p>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <article class="card about__card">
+            <div class="about__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="about__card-title">Nonpartisan</h3>
+            <p class="about__card-text">We don't endorse candidates or parties. We teach the process so every eligible voter can participate.</p>
+          </article>
+          <article class="card about__card">
+            <div class="about__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 class="about__card-title">Youth Led</h3>
+            <p class="about__card-text">Students lead the way, building chapters at their schools and helping peers navigate voting for the first time.</p>
+          </article>
+          <article class="card about__card">
+            <div class="about__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <h3 class="about__card-title">Community Focused</h3>
+            <p class="about__card-text">From classroom to community, we make civic engagement accessible, approachable, and actionable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voting 101 -->
+    <section id="voting-101" class="section voting-101" aria-labelledby="voting-101-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-eyebrow">Voting 101</p>
+          <h2 id="voting-101-heading" class="section-title">
+            Your guide to <span class="text-red">casting a ballot</span>
+          </h2>
+          <p class="section-lead">
+            New to voting? This is your starting point: clear, nonpartisan basics on
+            registering, choosing how to vote, and showing up with confidence.
+          </p>
+        </div>
+
+        <div class="voting-101__why card">
+          <h3 class="voting-101__why-title">Why your vote matters</h3>
+          <p class="voting-101__why-text">
+            Voting is how you shape the issues that affect your school, your community,
+            and your future, from local budgets to national policy. Every election counts,
+            not just presidential years. Your voice belongs in every race on the ballot.
+            No party or candidate gets our endorsement. We share just the facts you need to participate.
+          </p>
+        </div>
+
+        <div class="voting-101__methods">
+          <h3 class="voting-101__subheading">Three ways to vote in New Jersey</h3>
+          <div class="voting-101__methods-grid">
+            <article class="card voting-101__method-card">
+              <h4 class="voting-101__method-title">Election Day</h4>
+              <p class="voting-101__method-text">Vote in person at your assigned polling place on Election Day. Polls in New Jersey are typically open from 6:00 AM to 8:00 PM.</p>
+              <p class="voting-101__method-tip">
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                Find your polling location before you go. It may not be your school.
+              </p>
+              <a href="https://nj.gov/state/elections/vote-polling-location.shtml" class="voting-101__method-link" target="_blank" rel="noopener noreferrer">
+                Find your polling place
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </a>
+            </article>
+            <article class="card voting-101__method-card">
+              <h4 class="voting-101__method-title">Early Voting</h4>
+              <p class="voting-101__method-text">New Jersey offers in person early voting at designated locations in the days leading up to Election Day. No excuse needed.</p>
+              <p class="voting-101__method-tip">
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                Early voting locations differ from your Election Day polling place.
+              </p>
+              <a href="https://nj.gov/state/elections/vote-early-voting.shtml" class="voting-101__method-link" target="_blank" rel="noopener noreferrer">
+                View early voting locations
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </a>
+            </article>
+            <article class="card voting-101__method-card">
+              <h4 class="voting-101__method-title">Vote by Mail</h4>
+              <p class="voting-101__method-text">Request a mail in ballot and return it by mail or at a secure drop box. A great option if you'll be away or prefer voting from home.</p>
+              <p class="voting-101__method-tip">
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                Apply early and mail your ballot back well before the deadline.
+              </p>
+              <a href="https://voter.svrs.nj.gov/mib-request" class="voting-101__method-link" target="_blank" rel="noopener noreferrer">
+                Apply for a mail in ballot
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <div class="voting-101__cta card">
+          <p class="voting-101__cta-text">
+            Ready for official links? Our Resources section has everything you need to register,
+            find your polling place, and vote in New Jersey.
+          </p>
+          <a href="#resources" class="btn btn--primary">Go to Resources</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="section programs" aria-labelledby="programs-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-eyebrow">What We Do</p>
+          <h2 id="programs-heading" class="section-title">
+            Programs that <span class="text-red">make voting</span> accessible
+          </h2>
+          <p class="section-lead">
+            Whether you're casting your first ballot or starting a chapter at your school,
+            NextGenVotes meets you where you are.
+          </p>
+        </div>
+
+        <div class="programs__grid">
+          <article class="card programs__card">
+            <span class="programs__tag">Voter Education</span>
+            <h3 class="programs__title">First Time Voter Resources</h3>
+            <p class="programs__description">Step by step guides to registering, finding your polling place, voting early, and casting your ballot by mail. We connect you directly to official New Jersey election resources.</p>
+            <ul class="programs__highlights">
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Registration checklists</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Polling location lookup</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Vote by mail guidance</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Election day prep</li>
+            </ul>
+          </article>
+          <article class="card programs__card programs__card--red">
+            <span class="programs__tag">School Chapters</span>
+            <h3 class="programs__title">NextGenVotes Clubs in NJ</h3>
+            <p class="programs__description">Students start NextGenVotes chapters at their high schools and colleges to help classmates and community members learn about civic engagement, peer to peer, school by school.</p>
+            <ul class="programs__highlights">
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Chapter startup support</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Peer led workshops</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Community outreach</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Growing across NJ</li>
+            </ul>
+          </article>
+          <article class="card programs__card">
+            <span class="programs__tag">Civic Engagement</span>
+            <h3 class="programs__title">Beyond the Ballot</h3>
+            <p class="programs__description">Voting is just the start. Our chapters foster ongoing civic participation, from poll worker opportunities to understanding local government and community issues.</p>
+            <ul class="programs__highlights">
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Poll worker recruitment</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Civic literacy</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Community events</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Nonpartisan dialogue</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Involved -->
+    <section id="get-involved" class="section get-involved" aria-labelledby="involved-heading">
+      <div class="container">
+        <div class="get-involved__layout">
+          <div class="get-involved__content">
+            <p class="section-eyebrow">Now Accepting Chapter Lead Applications</p>
+            <h2 id="involved-heading" class="section-title">
+              Start a <span class="text-red">NextGenVotes</span> Chapter
+            </h2>
+            <p class="section-lead">
+              We are looking for high school age students to start chapters in their school
+              or community. You'll work directly with NextGenVotes founder, Antonina Kiszkiel,
+              contributing to educating people on civics and the steps to staying civically
+              active. You'll walk away with tangible skills in community organizing,
+              strategic communications, leadership, and creating an impact on your community.
+              Open to students in grades 9-11. Applications close August 1st.
+            </p>
+            <div class="get-involved__actions">
+              <a href="https://forms.gle/HanEQyA81GQghY7a8" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Apply Now</a>
+              <a href="https://forms.gle/yWcbUJyeenfsV3YM9" class="btn btn--secondary btn--lg get-involved__btn-secondary" target="_blank" rel="noopener noreferrer">General New Member Application</a>
+            </div>
+          </div>
+          <div class="get-involved__steps">
+            <div class="get-involved__step">
+              <span class="get-involved__step-num">01</span>
+              <div>
+                <h3 class="get-involved__step-title">Apply</h3>
+                <p class="get-involved__step-text">Submit a chapter lead or new member application and tell us about your school.</p>
+              </div>
+            </div>
+            <div class="get-involved__step">
+              <span class="get-involved__step-num">02</span>
+              <div>
+                <h3 class="get-involved__step-title">Get Resources</h3>
+                <p class="get-involved__step-text">We provide materials, guidance, and support to help you launch your chapter.</p>
+              </div>
+            </div>
+            <div class="get-involved__step">
+              <span class="get-involved__step-num">03</span>
+              <div>
+                <h3 class="get-involved__step-title">Build Your Club</h3>
+                <p class="get-involved__step-text">Recruit members, host events, and help your peers learn how to vote.</p>
+              </div>
+            </div>
+            <div class="get-involved__step">
+              <span class="get-involved__step-num">04</span>
+              <div>
+                <h3 class="get-involved__step-title">Make an Impact</h3>
+                <p class="get-involved__step-text">Educate your school and community, one conversation and one voter at a time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="section resources" aria-labelledby="resources-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-eyebrow">Voter Resources</p>
+          <h2 id="resources-heading" class="section-title">
+            Everything You Need to <span class="text-red">Vote in New Jersey</span>
+          </h2>
+          <p class="section-lead">
+            Official New Jersey election resources, curated by NextGenVotes to help
+            first time voters navigate the process with confidence.
+          </p>
+        </div>
+
+        <div class="resources__grid">
+          <a href="https://forms.gle/1tVVc36k4EECytB76" class="card resources__card resources__card--featured" target="_blank" rel="noopener noreferrer">
+            <div>
+              <h3 class="resources__title">Register to Vote</h3>
+              <p class="resources__description">It takes less than 2 minutes to register.</p>
+            </div>
+            <span class="resources__cta">Register now <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></span>
+          </a>
+          <a href="https://www.vote.org/am-i-registered-to-vote/" class="card resources__card" target="_blank" rel="noopener noreferrer">
+            <h3 class="resources__title">Check Your Registration</h3>
+            <p class="resources__description">Confirm your voter registration status before Election Day.</p>
+            <span class="resources__cta">Check status <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></span>
+          </a>
+          <a href="https://nj.gov/state/elections/vote-polling-location.shtml" class="card resources__card" target="_blank" rel="noopener noreferrer">
+            <h3 class="resources__title">Locate Your Polling Place</h3>
+            <p class="resources__description">Find your official Election Day polling place in New Jersey.</p>
+            <span class="resources__cta">Find location <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></span>
+          </a>
+          <a href="https://voter.svrs.nj.gov/mib-request" class="card resources__card" target="_blank" rel="noopener noreferrer">
+            <h3 class="resources__title">Vote By Mail</h3>
+            <p class="resources__description">Request a mail in ballot through New Jersey's official voter portal.</p>
+            <span class="resources__cta">Request ballot <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></span>
+          </a>
+          <a href="https://nj.gov/state/elections/vote-early-voting.shtml" class="card resources__card" target="_blank" rel="noopener noreferrer">
+            <h3 class="resources__title">Early Voting Locations</h3>
+            <p class="resources__description">Find early voting locations across New Jersey before Election Day.</p>
+            <span class="resources__cta">View locations <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></span>
+          </a>
+          <a href="https://nj.gov/state/elections/vote.shtml" class="card resources__card" target="_blank" rel="noopener noreferrer">
+            <h3 class="resources__title">New Jersey Voter Information Portal</h3>
+            <p class="resources__description">Official NJ election information, deadlines, and county resources.</p>
+            <span class="resources__cta">Explore portal <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donate — links set in script.js DONATE_LINKS -->
+    <section id="donate" class="section donate" aria-labelledby="donate-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-eyebrow">Support Our Work</p>
+          <h2 id="donate-heading" class="section-title">
+            Donate to <span class="text-red">NextGenVotes</span>
+          </h2>
+          <p class="section-lead">
+            Help us expand student led chapters, visit more classrooms, and make civic
+            education accessible across New Jersey.
+          </p>
+        </div>
+
+        <div class="donate__grid">
+          <article class="card donate__card">
+            <h3 class="donate__title">One time donation</h3>
+            <p class="donate__description">Make a single gift to support civic education across New Jersey.</p>
+            <a href="#" class="btn btn--primary donate__btn" data-donate="oneTime">Donate</a>
+          </article>
+          <article class="card donate__card">
+            <h3 class="donate__title">Monthly donation</h3>
+            <p class="donate__description">Give recurring support that helps us reach more students year round.</p>
+            <a href="#" class="btn btn--primary donate__btn" data-donate="monthly">Donate</a>
+          </article>
+          <article class="card donate__card">
+            <h3 class="donate__title">Sponsor a chapter</h3>
+            <p class="donate__description">Help launch and sustain a student led NextGenVotes chapter.</p>
+            <a href="#" class="btn btn--primary donate__btn" data-donate="sponsorChapter">Donate</a>
+          </article>
+          <article class="card donate__card">
+            <h3 class="donate__title">Sponsor education materials</h3>
+            <p class="donate__description">Fund classroom resources and voter education tools for students.</p>
+            <a href="#" class="btn btn--primary donate__btn" data-donate="sponsorMaterials">Donate</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__card card">
+          <div class="contact__content">
+            <p class="section-eyebrow">Stay Connected</p>
+            <h2 id="contact-heading" class="section-title">
+              Join the <span class="text-red">movement</span>
+            </h2>
+            <p class="section-lead">
+              Follow us on Instagram for updates, voter tips, and chapter news.
+              Have questions about starting a chapter or voting in NJ? Reach out. We're here to help.
+            </p>
+          </div>
+          <div class="contact__actions">
+            <a href="https://instagram.com/nextgen.votes" class="btn btn--primary btn--lg contact__btn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+              @nextgen.votes
+            </a>
+            <a href="https://forms.gle/yWcbUJyeenfsV3YM9" class="btn btn--secondary btn--lg" target="_blank" rel="noopener noreferrer">Join as a Member</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <nav class="footer__nav" aria-label="Footer">
+          <div class="footer__nav-group">
+            <h3 class="footer__nav-title">Explore</h3>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#voting-101">Voting 101</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#get-involved">Get Involved</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#donate">Donate</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-group">
+            <h3 class="footer__nav-title">Connect</h3>
+            <ul>
+              <li><a href="https://instagram.com/nextgen.votes" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://linktr.ee/nextgenvotes" target="_blank" rel="noopener noreferrer">Linktree</a></li>
+              <li><a href="https://nj.gov/state/elections/vote.shtml" target="_blank" rel="noopener noreferrer">NJ Voter Portal</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__brand">
+          <div class="footer__brand-mark">
+            <p class="footer__wordmark">
+              <span class="text-white">NextGen</span><span class="text-red">Votes</span>
+            </p>
+            <img src="logo.png" alt="NextGenVotes" class="footer__logo" width="56" height="56" />
+          </div>
+          <p class="footer__tagline">Nonpartisan voter education for the next generation.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year">2026</span> NextGenVotes. All rights reserved.</p>
+        <p class="footer__disclaimer">
+          NextGenVotes is a nonpartisan organization. We do not endorse candidates or political parties.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
